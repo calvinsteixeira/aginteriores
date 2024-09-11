@@ -95,6 +95,13 @@ export default function Home() {
             <Button size={'sm'}>Contratar</Button>
           </div>
         </section>
+        <section>
+          <div className='w-full h-max content-center self-center text-center'>
+            <Components.Counter className="text-6xl text-primary" duration={4}  bottomOffset={100} partialVisibility prefix="+" start={0} end={50} />
+            <h2 className='text-3xl text-primary'>PROJETOS</h2>
+          </div>
+          {/* <h1 className='font-semibold'>Conheça nossos projetos</h1> */}
+        </section>
       </main>
     </div>
   );
