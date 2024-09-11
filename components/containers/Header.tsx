@@ -33,8 +33,8 @@ export function Header({}: Props) {
   return (
     <div
       data-mobilemenuvisibility={mobileMenuVisible}
-      className={`w-full h-16 data-[mobilemenuvisibility=true]:h-[20rem] data-[mobilemenuvisibility=true]:bg-white/90 data-[mobilemenuvisibility=true]:shadow-lg fixed z-20 px-6 transition-all ${
-        isScrolled ? 'bg-white/90' : 'bg-transparent'
+      className={`w-full data-[mobilemenuvisibility=true]:shadow-xl backdrop-blur-xl h-16 data-[mobilemenuvisibility=true]:h-[20rem] data-[mobilemenuvisibility=true]:bg-white/80 fixed z-20 px-6 transition-all ${
+        isScrolled ? 'bg-white/80 shadow-xl' : 'bg-transparent'
       }`}
     >
       <div className="w-full flex justify-between h-16 items-center">

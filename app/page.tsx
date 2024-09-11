@@ -52,7 +52,7 @@ export default function Home() {
         <section className="space-y-8">
           <div className="w-full h-[20rem] relative">
             <Image
-              src={'/imgbg1.png'}
+              src={'/imgbg2.png'}
               alt="Imagem de um ambiente com paredes claras, 2 sofás brancos e uma mesa de apoio com potes de decoração."
               objectFit="cover"
               fill
@@ -60,13 +60,10 @@ export default function Home() {
             />
           </div>
           <div className="space-y-4">
-            <h2 className="font-semibold">Visualize suas idéias com a gente</h2>
-            <p>
-              Nós estamos prontos para te ajudar a construir os ambientes que você sempre sonhou, com elegância, conforto e um design que reflete a sua
-              personalidade.
-            </p>
+            <p>Iremos te ajudar a transformar o seu ambiente em lar, com elegância, conforto e uma design que explora praticidade e funcionalidade.</p>
           </div>
-          <div>
+          <div className="space-y-4">
+            <h2 className="font-semibold">Escolha a opção que se encaixa na sua personalidade</h2>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-primary/60">Contemporâneos</AccordionTrigger>
@@ -84,8 +81,7 @@ export default function Home() {
               <AccordionItem value="item-3">
                 <AccordionTrigger className="text-primary/60">Minimalistas</AccordionTrigger>
                 <AccordionContent>
-                  Espaços que valorizam a simplicidade, trazendo leveza visual e um ambiente organizado e funcional, ideal para quem busca
-                  tranquilidade.
+                  Espaços que valorizam a simplicidade, trazendo leveza visual e um ambiente organizado e funcional, ideal para quem busca tranquilidade.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
@@ -96,6 +92,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+            <Button size={'sm'}>Contratar</Button>
           </div>
         </section>
       </main>
