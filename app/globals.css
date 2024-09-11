@@ -14,12 +14,6 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -89,7 +83,7 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-  main {
+  section {
     @apply px-6
   }
 }
