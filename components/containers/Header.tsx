@@ -40,15 +40,15 @@ export function Header({}: Props) {
       <div className="w-full flex justify-between h-16 items-center">
         <div>
           {mobileMenuVisible === true ? (
-            <Icons.CgClose onClick={changeMobileMenuVisibility} className={`text-3xl 'text-foreground'`} />
+            <Icons.CgClose onClick={changeMobileMenuVisibility} className={`text-3xl text-primary`} />
           ) : (
-            <Icons.BiMenu onClick={changeMobileMenuVisibility} className={`text-3xl ${isScrolled ? 'text-foreground' : 'text-white'}`} />
+            <Icons.BiMenu onClick={changeMobileMenuVisibility} className={`text-3xl ${isScrolled ? 'text-primary' : 'text-white'}`} />
           )}
         </div>
         <div>
           <h1
             data-mobilemenuvisibility={mobileMenuVisible}
-            className={`data-[mobilemenuvisibility=true]:text-foreground ${isScrolled ? 'text-foreground' : 'text-white'}`}
+            className={`data-[mobilemenuvisibility=true]:text-primary ${isScrolled ? 'text-primary' : 'text-white'}`}
           >
             Anna Gois Interiores
           </h1>

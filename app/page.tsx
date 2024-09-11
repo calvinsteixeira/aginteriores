@@ -10,7 +10,7 @@ export default function Home() {
       <main className="bg-background">
         <section className="relative w-full h-screen bg-primary overflow-hidden flex items-center justify-center">
           <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
-          <div className="text-center z-20 text-white space-y-8">
+          <div className="text-center z-10 text-white space-y-8">
             <div className='space-y-4'>
               <h2 className="font-semibold text-2xl">Torne seus ambientes minimalistas e modernos</h2>
               <p>Damos vida aos ambientes conciliando a personalidade de quem os utiliza.</p>
