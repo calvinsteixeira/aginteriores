@@ -3,6 +3,7 @@ import Image from 'next/image';
 import * as Components from '@/components/index';
 import * as Icons from '@/icons';
 import { Button } from '@/components/ui/button';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 export default function Home() {
   return (
@@ -46,6 +47,55 @@ export default function Home() {
               moreInforedirectPath="/"
               icon={<Icons.FaRegHandshake />}
             />
+          </div>
+        </section>
+        <section className="space-y-8">
+          <div className="w-full h-[20rem] relative">
+            <Image
+              src={'/imgbg1.png'}
+              alt="Imagem de um ambiente com paredes claras, 2 sofás brancos e uma mesa de apoio com potes de decoração."
+              objectFit="cover"
+              fill
+              className="z-0 rounded-2xl"
+            />
+          </div>
+          <div className="space-y-4">
+            <h2 className="font-semibold">Visualize suas idéias com a gente</h2>
+            <p>
+              Nós estamos prontos para te ajudar a construir os ambientes que você sempre sonhou, com elegância, conforto e um design que reflete a sua
+              personalidade.
+            </p>
+          </div>
+          <div>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-primary/60">Contemporâneos</AccordionTrigger>
+                <AccordionContent>
+                  Ambientes que combinam sofisticação com linhas suaves e funcionais, criando espaços elegantes e acolhedores.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-primary/60">Atemporais</AccordionTrigger>
+                <AccordionContent>
+                  Estilos que nunca saem de moda, com combinações de elementos clássicos e modernos, proporcionando um equilíbrio perfeito entre elegância,
+                  durabilidade e sustentabilidade.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-primary/60">Minimalistas</AccordionTrigger>
+                <AccordionContent>
+                  Espaços que valorizam a simplicidade, trazendo leveza visual e um ambiente organizado e funcional, ideal para quem busca
+                  tranquilidade.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-primary/60">Modernos</AccordionTrigger>
+                <AccordionContent>
+                  Com um design inovador, o estilo moderno utiliza linhas arrojadas, materiais tecnológicos e soluções criativas para transformar qualquer
+                  ambiente.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </section>
       </main>
