@@ -60,7 +60,7 @@ export default function Home() {
             />
           </div>
           <div className="space-y-4">
-            <p>Iremos te ajudar a transformar o seu ambiente em lar, com elegância, conforto e uma design que explora praticidade e funcionalidade.</p>
+            <p>Iremos te ajudar a transformar o seu ambiente em lar, com elegância, conforto e uma design que explora praticidade e funcionalidade.</p>
           </div>
           <div className="space-y-4">
             <h2 className="font-semibold">Escolha a opção que se encaixa na sua personalidade</h2>
