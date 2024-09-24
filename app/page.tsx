@@ -10,6 +10,7 @@ export default function Home() {
     <div className="w-full min-h-screen">
       <Components.Header />
       <main className="bg-background">
+        {/* IMAGEM */}
         <section className="relative w-full h-screen bg-primary overflow-hidden flex items-center justify-center">
           <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
           <div className="text-center z-10 text-white space-y-8">
@@ -27,9 +28,27 @@ export default function Home() {
             className="z-0"
           />
         </section>
+        {/* SERVIÇOS */}
         <section>
           <div className="space-y-6">
-            <h1 className="font-semibold">Nossos diferenciais</h1>
+            <h1 className="font-semibold">Nosso serviços</h1>
+            <Components.Service
+              title="Renderização de imagens"
+              description="Renderização de interiores com imagens realistas para visualizar o ambiente final"
+              imgPath="/imgbg3.png"
+            />
+            <Components.Service
+              title="Projeto executivo"
+              description="Renderização de interiores com imagens realistas para visualizar o ambiente final"
+              imgPath="/imgbg3.png"
+            />
+          </div>
+        </section>
+        <Components.Divider />
+        {/* DIFERENCIAIS */}
+        <section className="bg-secondary">
+          <div className="space-y-6">
+            <h1 className="font-semibold">Por que escolher a gente</h1>
             <Components.Qualitie
               title="Realismo"
               description="Imagens que mostram com alta fidelidade como seu ambiente será"
@@ -51,6 +70,7 @@ export default function Home() {
           </div>
         </section>
         <Components.Divider />
+        {/* TIPOS DE PROJETOS */}
         <section className="space-y-8">
           <div className="w-full h-[20rem] relative">
             <Image
@@ -98,10 +118,11 @@ export default function Home() {
           </div>
         </section>
         <Components.Divider />
-        <section>
+        {/* GALERIA DE PROJETOS */}
+        <section className="bg-secondary">
           <div className="w-full h-max content-center self-center text-center">
-            <Components.Counter className="text-6xl text-primary" duration={3} bottomOffset={100} partialVisibility prefix="+" start={0} end={50} />
-            <h2 className="text-3xl text-primary">PROJETOS</h2>
+            <Components.Counter className="text-6xl text-foreground" duration={3} bottomOffset={100} partialVisibility prefix="+" start={0} end={50} />
+            <h2 className="text-3xl text-foreground">PROJETOS</h2>
           </div>
           {/* <h1 className='font-semibold'>Conheça nossos projetos</h1> */}
         </section>

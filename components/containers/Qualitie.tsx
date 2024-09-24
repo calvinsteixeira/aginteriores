@@ -25,9 +25,9 @@ export function Qualitie(props: QualitieProps) {
         <p className="font-semibold text-sm">{props.title}</p>
         <p className="text-sm">{props.description}</p>
       </div>
-      <Button size={'sm'} variant={'ghost'} className="text-primary p-0">
+      {/* <Button size={'sm'} variant={'ghost'} className="text-primary p-0">
         Mais detalhes
-      </Button>
+      </Button> */}
     </div>
   );
 }

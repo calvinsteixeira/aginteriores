@@ -33,22 +33,22 @@ export function Header({}: Props) {
   return (
     <div
       data-mobilemenuvisibility={mobileMenuVisible}
-      className={`w-full data-[mobilemenuvisibility=true]:shadow-xl h-16 data-[mobilemenuvisibility=true]:h-[20rem] data-[mobilemenuvisibility=true]:bg-white fixed z-20 px-6 transition-all ${
-        isScrolled ? 'bg-white shadow-xl' : 'bg-transparent'
+      className={`w-full data-[mobilemenuvisibility=true]:shadow-md h-16 data-[mobilemenuvisibility=true]:h-[20rem] data-[mobilemenuvisibility=true]:bg-white fixed z-20 px-6 transition-all ${
+        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
       }`}
     >
       <div className="w-full flex justify-between h-16 items-center">
         <div>
           {mobileMenuVisible === true ? (
-            <Icons.CgClose onClick={changeMobileMenuVisibility} className={`text-3xl text-primary`} />
+            <Icons.CgClose onClick={changeMobileMenuVisibility} className={`text-2xl text-foreground`} />
           ) : (
-            <Icons.BiMenu onClick={changeMobileMenuVisibility} className={`text-3xl ${isScrolled ? 'text-primary' : 'text-white'}`} />
+            <Icons.BiMenu onClick={changeMobileMenuVisibility} className={`text-2xl ${isScrolled ? 'text-foreground' : 'text-white'}`} />
           )}
         </div>
         <div>
           <h1
             data-mobilemenuvisibility={mobileMenuVisible}
-            className={`data-[mobilemenuvisibility=true]:text-primary ${isScrolled ? 'text-primary' : 'text-white'}`}
+            className={`data-[mobilemenuvisibility=true]:text-foreground ${isScrolled ? 'text-foreground' : 'text-white'}`}
           >
             Anna Gois Interiores
           </h1>
