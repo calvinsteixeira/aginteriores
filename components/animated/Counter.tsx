@@ -11,7 +11,6 @@ interface CounterProps extends CountUpProps {
 
 export function Counter(props: CounterProps) {
   const [hasAnimated, setHasAnimated] = useState(false);
-
   return (
     <VisibilitySensor
       offset={{ bottom: props.bottomOffset }}
