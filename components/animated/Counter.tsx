@@ -1,6 +1,5 @@
 'use client';
-
-import React, { useState } from 'react';
+import React from 'react';
 import CountUp, { CountUpProps } from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
@@ -10,7 +9,7 @@ interface CounterProps extends CountUpProps {
 }
 
 export function Counter(props: CounterProps) {
-  const [hasAnimated, setHasAnimated] = useState(false);
+  const [hasAnimated, setHasAnimated] = React.useState<boolean>(false);
   return (
     <VisibilitySensor
       offset={{ bottom: props.bottomOffset }}
