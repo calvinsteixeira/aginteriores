@@ -31,7 +31,7 @@ export default function Home() {
         {/* SERVIÇOS */}
         <section>
           <div className="space-y-6">
-            <h1 className="font-semibold">Nosso serviços</h1>
+            <h1 className="font-semibold">Nossos serviços</h1>
             <Components.Service
               title="Renderização de imagens"
               description="Renderização de interiores com imagens realistas para visualizar o ambiente final"
