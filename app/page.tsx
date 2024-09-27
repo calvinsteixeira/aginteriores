@@ -8,7 +8,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 export default function Home() {
   return (
     <div className="w-full min-h-screen">
-      <Components.Header />
       <main className="bg-background">
         {/* IMAGEM */}
         <section className="relative w-full h-screen bg-primary overflow-hidden flex items-center justify-center">
@@ -119,12 +118,12 @@ export default function Home() {
         </section>
         <Components.Divider />
         {/* GALERIA DE PROJETOS */}
-        <section className="bg-secondary">
+        <section className="bg-secondary space-y-12">
           <div className="w-full h-max content-center self-center text-center">
             <Components.Counter className="text-6xl text-foreground" duration={3} bottomOffset={100} partialVisibility prefix="+" start={0} end={50} />
             <h2 className="text-3xl text-foreground">PROJETOS</h2>
           </div>
-          {/* <h1 className='font-semibold'>Conheça nossos projetos</h1> */}
+          <h1 className='font-semibold'>Galeria de imagens</h1>
         </section>
         <Components.Divider />
       </main>
