@@ -13,7 +13,7 @@ type ServiceProps = {
 
 export function Service(props: ServiceProps) {
   return (
-    <div className="space-y-4 border-[1px] border-primary/30 text-foreground/80 px-3 py-4 rounded-md space-y-3">
+    <div className="space-y-4 border-[1px] border-primary/30 text-foreground/80 px-3 py-4 rounded-md">
       <div className='flex gap-4'>
         <div className="flex-1 space-y-4">
           <h2 className="font-semibold text-base">{props.title}</h2>
